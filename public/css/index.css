@@ -1,0 +1,117 @@
+body {
+    background: url(/img/bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#app {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    padding: 2rem;
+    margin: 4rem;
+    background: rgba(22, 2, 58, 0.9);
+    border-radius: 0.5rem;
+    width: 50%;
+}
+
+h1 {
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    color: #fff
+}
+
+.check {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+.char {
+    background: rgba(78, 111, 172, 0.5);
+    padding: 1rem;
+}
+
+.char-input {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+#range-of-char {
+    width: 50%;
+}
+
+#num-of-char {
+    width: 20%;
+}
+
+.form-check-label {
+    color: #fff
+}
+
+.output {
+    display: flex;
+    justify-content: space-between;
+}
+
+.output-input {
+    background-color: rgb(11, 3, 26);
+    border: none;
+    border-radius: 0rem;
+    height: 7.5vh;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    outline: none;
+}
+
+.output-copy-container {
+    background-color: rgb(22, 2, 58);;
+    height: 7.5vh;
+    width: 5vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.output-copy {
+    color: #fff;
+    text-align: center;
+}
+
+.output-copy:hover {
+    text-decoration: none;
+    color: rgba(78, 111, 172, 0.5);
+    cursor: pointer;
+}
+
+h4 {
+    margin-bottom: 1rem;
+}
+
+.submit {
+    font-size: 1.5rem;
+    bottom: 1rem;
+    right: 1rem;
+    width: 100%;
+    background: rgba(50, 14, 112, 0.5);
+    border: none;
+    border-radius: 0rem;
+}
+
+
+small {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    color: #fff;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/header') %>
+
+<body>
+    <div id="app">
+        <div class="container">
+            <h1>Password Generator</h1>
+            <form>
+                <div class="output">
+                    <input type="text" class="output-input" :value="passwordCharacters" ref="inputVal">
+                    <div class="output-copy-container">
+                        <p class="output-copy" href="#" v-on:click="copyToClipboard">Copy</p>
+                    </div>
+                </div>
+                <div class="char">
+                    <div class="char-input">
+                        <label class="form-check-label">Number of Characters</label>
+                        <input v-model="charRange" type="range" class="form-control" id="range-of-char" min="1"
+                            max="50">
+                        <input v-model="charNum" type="number" class="form-control" id="num-of-char" min="1" max="50">
+                    </div>
+                    <div class="check">
+                        <label class="form-check-label">Include Uppercase</label>
+                        <input v-model="inUpperCase" type="checkbox" class="input-check">
+                    </div>
+                    <div class="check">
+                        <label class="form-check-label">Include Numbers</label>
+                        <input v-model="inNum" type="checkbox" class="input-check">
+                    </div>
+                    <div class="check">
+                        <label class="form-check-label">Include Symbols</label>
+                        <input v-model="inSymbols" type="checkbox" class="input-check">
+                    </div>
+                </div>
+
+                <button v-on:click="submit" type="submit" class="btn btn-primary submit">Generate</button>
+            </form>
+
+            <small>Powered by IGN Web</small>
+        </div>
+    </div>
+
+    <%- include('partials/footer') %>
+</body>
+
+</html>
